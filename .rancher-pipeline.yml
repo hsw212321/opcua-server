@@ -6,7 +6,7 @@ stages:
       buildContext: .
       tag: bglab-iot/opc-ua-server:v0.1
       pushRemote: true
-      registry: 192.168.137.100
+      registry: 127.0.0.1:34450
 - name: 部署OPC UA服务
   steps:
   - applyYamlConfig:
