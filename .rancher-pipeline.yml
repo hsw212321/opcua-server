@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: 192.168.137.100/opc-ua-server:v0.1
+      tag: bglab-iot/opc-ua-server:v0.1
       pushRemote: true
       registry: 192.168.137.100
 - name: 部署OPC UA服务
