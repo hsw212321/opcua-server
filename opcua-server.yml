@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: opcua-server
-        image: cps-edge:0.1
+        image: hsw212321/opcua-server:v0.1
         ports:
         - containerPort: 4840
           hostPort: 4840
