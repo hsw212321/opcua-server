@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opcua-server-deployment
+  labels:
+    app: opcua-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opcua-server
+  template:
+    metadata:
+      labels:
+        app: opcua-server
+    spec:
+      containers:
+      - name: opcua-server
+        image: cps-edge:0.1
+        ports:
+        - containerPort: 4840
+          hostPort: 4840
